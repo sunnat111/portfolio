@@ -22,6 +22,7 @@ function App() {
         <Route path="/portfolio/contacts" element={<Contacts />} />
         <Route path="/*" element={<NotFound></NotFound>} />
       </Routes>
+      <Footer/>
     </>
   );
 }
