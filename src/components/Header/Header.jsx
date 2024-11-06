@@ -45,7 +45,7 @@ const Header = () => {
                   className={s.header__main_right_list_img}
                 />
                 <span>
-                  <a href="https://www.youtube.com/@azizbekov_s">Instagram</a>
+                  <a href="https://www.youtube.com/@azizbekov_s" target="_blank">Instagram</a>
                 </span>
               </li>
               <li>
@@ -55,7 +55,7 @@ const Header = () => {
                   className={s.header__main_right_list_img}
                 />
                 <span>
-                  <a href="https://t.me/pythonwith">Discord</a>
+                  <a href="https://t.me/pythonwith" target="_blank">Discord</a>
                 </span>
               </li>
               <li>
@@ -65,7 +65,7 @@ const Header = () => {
                   className={s.header__main_right_list_img}
                 />
                 <span>
-                  <a href="https://github.com/sunnat111">Github</a>
+                  <a href="https://github.com/sunnat111" target="_blank">Github</a>
                 </span>
               </li>
             </ul>

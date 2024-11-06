@@ -31,6 +31,7 @@ const Skills = () => {
               />
               <a
                 href="https://en.wikipedia.org/wiki/Web_development"
+                target="_blank"
                 className={s.skill__top_left_name}
               >
                 web developement
@@ -41,6 +42,7 @@ const Skills = () => {
               <img src={phoneIcon} alt="" className={s.skill__top_left_icon} />
               <a
                 href="https://en.wikipedia.org/wiki/Mobile_app_development"
+                target="_blank"
                 className={s.skill__top_left_name}
               >
                 App developement
@@ -53,25 +55,25 @@ const Skills = () => {
               <div className={s.skill__bottom_html_img}>
                 <img src={htmlIcon} alt="" />
               </div>
-              <a href="https://ru.wikipedia.org/wiki/HTML">HTML</a>
+              <a href="https://ru.wikipedia.org/wiki/HTML" target="_blank">HTML</a>
             </div>
             <div className={s.skill__bottom_css}>
               <div className={s.skill__bottom_css_img}>
                 <img src={cssIcon} alt="" />
               </div>
-              <a href="https://ru.wikipedia.org/wiki/CSS">CSS</a>
+              <a href="https://ru.wikipedia.org/wiki/CSS" target="_blank">CSS</a>
             </div>
             <div className={s.skill__bottom_js}>
               <div className={s.skill__bottom_js_img}>
                 <img src={jsIcon} alt="" />
               </div>
-              <a href="https://learn.javascript.ru/">JS</a>
+              <a href="https://learn.javascript.ru/" target="_blank">JS</a>
             </div>
             <div className={s.skill__bottom_react}>
               <div className={s.skill__bottom_react_img}>
                 <img src={reactIcon} alt="" />
               </div>
-              <a href="https://react.dev/">REACT</a>
+              <a href="https://react.dev/" target="_blank">REACT</a>
             </div>
           </div>
         </div>

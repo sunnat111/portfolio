@@ -41,30 +41,20 @@
 
       &_list {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 34px;
-
+        gap: 33px;
         li {
-          display: flex;
-          align-items: center;
+          display: flex;  
           gap: 9px;
-
-          a {
-            /* Media-M */
-            display: flex;
-            align-items: center;
-            color: rgb(255, 255, 255);
-            font-size: 16px;
-            font-weight: 400;
-            text-transform: capitalize;
-            transition: color 0.5s;
-            transition: transform 0.5s ease;
-          }
-          a:hover {
-            color: aqua;
-            transform: scale(1.1);
-          }
+        }
+        a {
+          /* Media-M */
+          color: rgb(255, 255, 255);
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 20px;
+          text-transform: capitalize;
+          transition: color 0.5s;
+          margin-top: 8px;
         }
       }
 

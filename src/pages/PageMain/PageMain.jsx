@@ -26,7 +26,7 @@ const PageMain = () => {
             <ul className={s.main__box_center_list}>
               <li>
                 <img src={emailIcon} alt="" />
-                <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">
+                <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank">
                   sunnat172006@gmail.com
                 </a>
               </li>
@@ -45,21 +45,25 @@ const PageMain = () => {
             </ul>
             <ul className={s.main__box_center_lang}>
               <li>
-                <a href="https://ru.wikipedia.org/wiki/HTML">HTML</a>
+                <a href="https://ru.wikipedia.org/wiki/HTML" target="_blank">HTML</a>
               </li>
               <li>
-                <a href="https://ru.wikipedia.org/wiki/CSS">CSS</a>
+                <a href="https://ru.wikipedia.org/wiki/CSS" target="_blank">CSS</a>
               </li>
               <li>
-                <a href="https://learn.javascript.ru/">JS</a>
+                <a href="https://learn.javascript.ru/" target="_blank">JS</a>
               </li>
               <li>
-                <a href="https://react.dev/">REACT</a>
+                <a href="https://react.dev/" target="_blank">REACT</a>
               </li>
             </ul>
 
             <div className={s.main__box_center_link}>
-              <a href="" className={s.main__box_center_text}>
+              <a
+                href="/portfolio/resume.pdf"
+                target="_blank"
+                className={s.main__box_center_text}
+              >
                 Download CV
                 <img src={downloadIcon} alt="" />
               </a>
@@ -76,32 +80,31 @@ const PageMain = () => {
                 you’re <br />
                 looking for a developer that likes to get stuff done,
               </p>
-              <a href="https://t.me/S200917">
+              <a href="https://t.me/S200917" target="_blank"> 
                 let’s talk <img src={emailIcon} alt="" />
               </a>
             </div>
-            <div className={s.main__box_bottom_right}>
-              <ul className={s.main__box_bottom_right_list}>
-                <li>
-                  <span>2</span>
-                  <p>
-                    Programming <br /> Language
-                  </p>
-                </li>
-                <li>
-                  <span>3</span>
-                  <p>
-                    Development <br /> Tools
-                  </p>
-                </li>
-                <li>
-                  <span>3</span>
-                  <p>
-                    Years of <br /> Experience
-                  </p>
-                </li>
-              </ul>
-            </div>
+
+            <ul className={s.main__box_bottom_right}>
+              <li>
+                <span>2</span>
+                <p>
+                  Programming <br /> Language
+                </p>
+              </li>
+              <li>
+                <span>3</span>
+                <p>
+                  Development <br /> Tools
+                </p>
+              </li>
+              <li>
+                <span>3</span>
+                <p>
+                  Years of <br /> Experience
+                </p>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

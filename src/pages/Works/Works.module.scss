@@ -5,6 +5,7 @@
   font-family: Arial, sans-serif;
   opacity: 0;
   animation: fadeIn 1s forwards;
+  min-height: 100vh;
   &__box {
     display: flex;
     flex-direction: column;

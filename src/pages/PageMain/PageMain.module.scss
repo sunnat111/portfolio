@@ -101,7 +101,7 @@
         display: flex;
         max-width: 220px;
         width: 100%;
-        gap: 18px;
+        gap: 13px;
         padding: 16px 32px;
         border-radius: 32px;
         /* White */
@@ -169,7 +169,6 @@
         }
       }
       &_right {
-        &_list {
           display: flex;
           flex-direction: column;
           gap: 48px;
@@ -194,6 +193,7 @@
             }
             span {
               /* Number-M */
+              padding-top: 16px;
               color: rgb(18, 247, 214);
               font-size: 48px;
               font-weight: 500;
@@ -202,7 +202,6 @@
           }
         }
       }
-    }
     &_title {
       /* BG text-U */
       color: rgb(152, 250, 236);

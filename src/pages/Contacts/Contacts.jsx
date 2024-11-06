@@ -19,7 +19,7 @@ const Contacts = () => {
           </div>
           <div className={s.contacts__box_content}>
             <button className={s.contacts__box_content_top}>
-              <a href="https://t.me/S200917">Send me a message</a>
+              <a href="https://t.me/S200917" target="_blank">Send me a message</a>
             </button>
             <div className={s.contacts__box_content_main}>
               <label>

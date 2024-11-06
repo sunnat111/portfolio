@@ -1,0 +1,45 @@
+.box {
+  &__title {
+    /* BG text-U */
+    color: rgb(152, 250, 236);
+    font-size: 117px;
+    font-weight: 400;
+    line-height: 134px;
+    text-transform: capitalize;
+  }
+  &__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+  }
+  &_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    &_reason {
+      /* H1-U */
+      color: rgb(255, 255, 255);
+      font-size: 64px;
+      font-weight: 400;
+      line-height: 72px;
+      text-transform: capitalize;
+    }
+    &_redirect {
+        color: rgb(255, 255, 255);
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 72px;
+        max-width: 750px;
+        text-align: center;
+    }
+    a {
+        color:  rgb(152, 250, 236);
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 72px;
+        text-decoration: underline;
+    }
+  }
+}

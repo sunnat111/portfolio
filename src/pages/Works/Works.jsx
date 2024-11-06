@@ -1,10 +1,18 @@
 import React, { useEffect } from "react";
 import s from "../Works/Works.module.scss";
 import { scrollIcon } from "../../utils/ImgExport";
-
+import { useDispatch, useSelector } from "react-redux";
+import { getProducts } from "../../../store/products/productSlice";
 
 const Works = () => {
 
+  const { items } = useSelector((state) => state.products)
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getProducts())
+
+  }, [])  
   return (
     <div className={s.works}>
       <div className="container">
@@ -18,8 +26,12 @@ const Works = () => {
               <p>I had the pleasure of working with these awesome projects</p>
             </div>
           </div>
-            <div className={s.works__box_bottom}>
-              <h1></h1>
+            <div className={s.works__box_bottom}> 
+              {items?.map((el) => {
+                <div className={s.itemfd}>
+                  <h1>{el.title}</h1>
+                </div>
+              })}
             </div>
         </div>
       </div>
