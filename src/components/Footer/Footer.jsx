@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="container">
         <div className={s.footer__box}>
           <div className={s.footer__box_one}>
-            <p>© 2023 SunnatAzizbekov. All rights reserved.</p>
+            <p>© 2023 Sunnat Azizbekov. All rights reserved.</p>
           </div>
           <div className={s.footer__box_two}>
             <p>Privacy Policy</p>

@@ -21,7 +21,7 @@ const Contacts = () => {
             <button className={s.contacts__box_content_top}>
               <a href="https://t.me/S200917" target="_blank">Send me a message</a>
             </button>
-            <div className={s.contacts__box_content_main}>
+            {/* <div className={s.contacts__box_content_main}>
               <label>
                 Your name *
                 <input
@@ -46,7 +46,7 @@ const Contacts = () => {
                   className={s.contacts__box_content_main_input}
                 />
               </label>
-            </div>
+            </div> */}
             <button className={s.contacts__box_content_bottom}>
               <a href="">Send Message</a>
               <img src={flyIcon} alt="" />

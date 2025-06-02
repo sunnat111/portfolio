@@ -31,14 +31,26 @@ input {
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
+
+
 }
 
 body {
-  height: 100%;
-  margin: 0;
   background: rgb(41, 47, 54);
 }
 
 p {
   font-family: "IBMPlexMono";
 }
+
+
+// @media(max-width:1360px) {
+//   .container {
+//     width: 1000px;
+//   }
+// }
+// @media(max-width:1280px) {
+//   .container {
+//     width: 1000px;
+//   }
+// }

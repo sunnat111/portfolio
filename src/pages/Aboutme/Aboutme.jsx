@@ -19,8 +19,8 @@ const Aboutme = () => {
                 <span>Hello!</span>
                 <p >
                   My name is Sunnat and I specialize in web developement
-                  that utilizes HTML, CSS, JS, <br />
-                  and REACT etc. <br />
+                  that utilizes HTML, CSS, JS, PYTHON, DJANGO
+                  and REACT etc. <br /> 
                   I am a highly motivated individual and eternal optimist
                   dedicated to writing clear, <br /> concise, robust code that
                   works. Striving to never stop learning and improving. <br />{" "}
@@ -32,9 +32,7 @@ const Aboutme = () => {
                 </p>
               </div>
             </div>
-            <div className={s.about__box_bottom_right}>
-              <img src={compIcon} alt="" />
-            </div>
+            <img className={s.about__box_bottom_right} src={compIcon} alt="" />
           </div>
         </div>
       </div>

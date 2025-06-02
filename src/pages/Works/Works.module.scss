@@ -6,21 +6,25 @@
   opacity: 0;
   animation: fadeIn 1s forwards;
   min-height: 100vh;
+
   &__box {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 64px;
+
     &_top {
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 64px;
+
       &_title {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 16px;
+
         h2 {
           /* H1-U */
           color: rgb(18, 247, 214);
@@ -29,6 +33,7 @@
           text-transform: capitalize;
           border-bottom: 2px solid rgb(18, 247, 214);
         }
+
         p {
           /* Para-M */
           color: rgb(255, 255, 255);
@@ -37,14 +42,51 @@
           text-align: center;
         }
       }
+
       &_scroll {
         background: rgb(26, 30, 35);
       }
     }
+
     &_bottom {
-      &_link {
-        position: absolute;
-        top: 202px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 128px;
+
+      @media(max-width: 1096px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      @media(max-width: 840px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @media(max-width: 480px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      &_card {
+        background-color: #333;
+        color: #ffff;
+        padding: 24px;
+        border-radius: 16px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+
+        &_name {
+          font-size: 1.5rem;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+
+        &_url {
+          /* Menu-M */
+          color: rgb(18, 247, 214);
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 32px;
+        }
+
       }
     }
   }
@@ -54,6 +96,7 @@
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }

@@ -34,6 +34,9 @@
           text-transform: capitalize;
           /* Brand 1 */
           border-bottom: 2px solid rgb(18, 247, 214);
+          @media(max-width: 240px) {
+            font-size: 56px;
+          }
         }
 
         p {
@@ -75,6 +78,13 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 128px;
         grid-auto-columns: 500px;
+
+        @media(max-width:1150px) {
+          grid-template-columns: repeat(1, 1fr);
+
+        }
+
+
         label {
           display: flex;
           flex-direction: column;
@@ -85,6 +95,10 @@
           font-weight: 300;
           text-align: left;
           width: 496px;
+          @media(max-width:600px) {
+            width: 300px;
+          }
+
           input {
             color: #fff;
             background: rgb(41, 47, 54);

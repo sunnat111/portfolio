@@ -14,7 +14,7 @@ const PageMain = () => {
     <div className={s.main}>
       <div className="container">
         <div className={s.main__box}>
-          <h1 className={s.main__box_title}>Web Developer</h1>
+          {/* <h1 className={s.main__box_title}>Web Developer</h1> */}
           <div className={s.main__box_center}>
             <div className={s.main__box_center_about}>
               <img src={faceIcon} alt="" />
@@ -93,7 +93,7 @@ const PageMain = () => {
                 </p>
               </li>
               <li>
-                <span>3</span>
+                <span>2</span>
                 <p>
                   Development <br /> Tools
                 </p>

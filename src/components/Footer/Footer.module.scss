@@ -1,50 +1,57 @@
 .footer {
-  padding: 16px 0 16px 0;
-  /* BG 2 */
+  padding: 16px 0;
   background: rgb(26, 30, 35);
+  width: 100%;
+
   &__box {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 247px;
+    position: relative;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    &_one {
-      width: 310px;
-      p {
-        /* Para-U */
-        color: rgb(255, 255, 255);
-        font-size: 16px;
-        font-weight: 300;
-        text-align: left;
-      }
+    gap: clamp(32px, 5vw, 247px); // Динамический gap
+
+    @media (max-width: 1000px) {  
+      gap: 53px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
+
+    &_one,
+    &_two,
+    &_three,
+    &_four {
+      max-width: 310px;
+      width: 100%;
+    }
+
+    &_one p,
+    &_two p,
+    &_four p {
+      color: rgb(255, 255, 255);
+      font-size: 16px;
+      font-weight: 300;
+      white-space: nowrap;
+      text-align: left;
+    }
+
     &_two {
       display: flex;
       gap: 32px;
-      width: 280px;
-      p {
-        /* Para-U */
-        color: rgb(255, 255, 255);
-        font-size: 16px;
-        font-weight: 300;
-        text-align: center;
-      }
+      justify-content: center;
     }
+
     &_three {
       display: flex;
       align-items: center;
       gap: 50px;
     }
+
     &_four {
       display: flex;
       align-items: center;
       gap: 4px;
-      p {
-        /* Para-U */
-        color: rgb(255, 255, 255);
-        font-size: 16px;
-        font-weight: 300;
-        text-align: center;
-      }
+
       a {
         color: rgb(18, 247, 214);
         font-size: 16px;

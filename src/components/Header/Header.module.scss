@@ -3,19 +3,24 @@
   font-family: Arial, sans-serif;
   opacity: 0;
   animation: fadeIn 1s forwards;
+
   &__main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 64px 0 64px 0;
+    padding: 64px 0;
+
     &_left {
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 8px;
 
+      @media(max-width: 1460px) {
+        text-align: center;
+      }
+
       a {
-        /* Logo-M */
         color: rgb(255, 255, 255);
         font-family: IBM Plex Mono;
         font-size: 32px;
@@ -42,46 +47,62 @@
       &_list {
         display: flex;
         gap: 33px;
-        li {
-          display: flex;  
-          gap: 9px;
-        }
+
         a {
-          /* Media-M */
-          color: rgb(255, 255, 255);
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 20px;
-          text-transform: capitalize;
-          transition: color 0.5s;
-          margin-top: 8px;
+          display: flex;
+          align-items: center;
+          gap: 9px;
+
+          p {
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            text-transform: capitalize;
+            transition: color 0.5s;
+
+            @media(max-width: 1280px) {
+              display: none;
+            }
+          }
         }
       }
 
       &_pages {
         display: flex;
         gap: 32px;
+      
+      /* Раскрытие при наведении */
+      :hover {
+        overflow: hidden;
+        max-width: 200px; // Ограничение ширины, чтобы скрывать элементы */
+        text-wrap: wrap;
+        transition: max-width 0.3s ease-in-out;
+      }
 
         a {
-          /* Menu-M */
           color: rgb(255, 255, 255);
           font-size: 24px;
           font-weight: 400;
           text-transform: capitalize;
           transition: color 0.5s;
         }
+
         a:hover {
           color: aqua;
         }
       }
     }
   }
+
+
 }
 
 @keyframes fadeIn {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }

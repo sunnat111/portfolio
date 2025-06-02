@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import s from "../Header/Header.module.scss";
 import {
   instagramIcon,
@@ -7,7 +7,7 @@ import {
   searchIcon,
 } from "../../utils/ImgExport";
 
-const Header = () => {
+  const Header = () => {
   return (
     <header className={s.header}>
       <div className="container">
@@ -37,38 +37,29 @@ const Header = () => {
               <input type="text" className={s.header__main_right_input} />
               <img src={searchIcon} alt="" />
             </div>
-            <ul className={s.header__main_right_list}>
-              <li>
+            <div className={s.header__main_right_list}>
+              <a href="https://www.youtube.com/@azizbekov_s" target="_blank">
                 <img
                   src={instagramIcon}
                   alt=""
                   className={s.header__main_right_list_img}
                 />
-                <span>
-                  <a href="https://www.youtube.com/@azizbekov_s" target="_blank">Instagram</a>
-                </span>
-              </li>
-              <li>
+                <p>Youtube</p></a>
+              <a href="https://t.me/pythonwith" target="_blank">
                 <img
                   src={discordIcon}
                   alt=""
                   className={s.header__main_right_list_img}
                 />
-                <span>
-                  <a href="https://t.me/pythonwith" target="_blank">Discord</a>
-                </span>
-              </li>
-              <li>
+                <p> Telegram</p></a>
+              <a href="https://github.com/sunnat111" target="_blank">
                 <img
                   src={githubIcon}
                   alt=""
                   className={s.header__main_right_list_img}
                 />
-                <span>
-                  <a href="https://github.com/sunnat111" target="_blank">Github</a>
-                </span>
-              </li>
-            </ul>
+                <p>Github</p></a>
+            </div >
           </div>
         </div>
       </div>
