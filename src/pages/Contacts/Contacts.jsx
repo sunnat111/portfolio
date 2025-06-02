@@ -48,7 +48,7 @@ const Contacts = () => {
               </label>
             </div> */}
             <button className={s.contacts__box_content_bottom}>
-              <a href="">Send Message</a>
+              <a href="">Send <Message></Message></a>
               <img src={flyIcon} alt="" />
             </button>
           </div>
